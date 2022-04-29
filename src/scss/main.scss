@@ -1,1 +1,73 @@
 @import "reset";
+
+body {
+    width: 100%; height: 100%;
+    display: grid;
+    grid-template-rows: 50px 10px 1fr 1fr;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+h3 {
+    color: rgb(73, 73, 73);
+}
+
+.headerContainer {
+    grid-row: 1;
+    display: flex;
+    padding: 15px 10% 10px 10%;
+    justify-content: space-between;
+}
+
+.notification {
+    position: absolute;
+    top: 10px; left: 8px;
+    background-color: #00d6d6;
+    width: 15px; height: 15px;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+main {
+display: grid;
+grid-template-columns: 1fr 50vw 1fr;
+grid-template-rows: 1fr 90%;
+grid-row: 3;
+}
+
+.filterSection {
+    margin: 10px 0;
+}
+.filterContainer {
+    // background-color: violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0.5rem 0.5rem;
+}
+td > button {
+    display: flex;
+    background: none;
+    border: solid 2px gray;
+    width: 30px; height: 30px;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+input[type*="checkbox"] {
+
+}
