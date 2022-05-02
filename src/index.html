@@ -26,8 +26,8 @@
   <main>
     <section class="filterContainer">
       <div>
-      <br><h1>Blusas</h1><br><br>
 
+      <br><h1>Blusas</h1><br><br>
       <div class="filterSection">
           <h3>CORES</h3><br>
 
@@ -51,6 +51,7 @@
             <input type="checkbox" name="Laranja" id="Laranja">
             <label for="Laranja">Laranja</label>
           </div>
+          <button class="showMore"><u>Ver todas as cores</u> <img src="./img/arrowDown.svg"></button>
         </div>
 
         <div class="filterSection">
@@ -131,10 +132,20 @@
     </section>
 
     <section class="cardsContainer">
-      <h1>Camisa, camisa</h1>
+      <ul id="cardList">
+        <!-- Lista de produtos -->
+      </ul>
     </section>
 
-    <p class="orderByInput">Order By</p>
+    <div>
+      <br>
+      <select id="orderOption">
+        <option value="de" disabled selected>Ordenar por:</option>
+        <option value="recent">Mais recentes</option>
+        <option value="lowestPrice">Menor preço</option>
+        <option value="biggestPrice">Maior preço</option>
+      </select>
+    </div>
   </main>
 
 </body>

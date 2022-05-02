@@ -16,7 +16,8 @@ const paths = {
     watch: "src/js/**/*.js",
   },
   styles: {
-    src: "src/scss/main.scss",
+    src: "src/scss/*.scss",
+    // src: "src/scss/main.scss",
   },
   img: {
     src: "src/img/**/*",
@@ -98,6 +99,7 @@ const dev = () => {
     "change",
     browserSync.reload
   );
+  
   server();
 };
 

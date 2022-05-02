@@ -1,0 +1,41 @@
+.showMore {
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.cardsContainer {
+    padding-top: 100px;
+}
+    
+.cardsContainer ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blackButton {
+    background-color: black;
+    color: white;
+    width: 70%; height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#cardList > li {
+    padding-bottom: 20px;
+}
+
+#cardList  li  span {
+    color:gray; 
+    font-size:0.9rem; 
+    margin-top:5px;
+}
+
+select{
+    height: 40px;
+    width: 40%;
+    border: solid 2px gray;
+    margin-top: 10px;
+}
