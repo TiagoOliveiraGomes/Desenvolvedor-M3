@@ -7,7 +7,11 @@
 }
 
 .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 100px;
+    
 }
     
 .cardsContainer ul{
@@ -15,12 +19,23 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.blackButton {
-    background-color: black;
+.squareButton{
     color: white;
-    width: 70%; height: 30px;
+     height: 30px;
     border: none;
     cursor: pointer;
+
+}
+
+.blackBackground {
+    background-color: black;
+    width: 70%;
+}
+
+.blueBackground {
+    background-color: #00C0EE;
+    width: 150px;
+    margin-top: 60px;
 }
 
 #cardList > li {
@@ -38,4 +53,8 @@ select{
     width: 40%;
     border: solid 2px gray;
     margin-top: 10px;
+}
+
+.hidden {
+    display: none;
 }

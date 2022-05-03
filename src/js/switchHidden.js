@@ -1,0 +1,1 @@
+function switchHiddenElement () {console.log("clicou!")}
