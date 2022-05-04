@@ -12,6 +12,7 @@ export default async function createList (api) {
         let span = document.createElement("span")
         let button = document.createElement("button")
         
+        li.dataset.color = element.color
         img.src = element.image
         img.alt = "imagem de:" + element.name
         h4.innerHTML = h4Value

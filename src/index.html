@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desenvolvedor M3</title>
   <link rel="stylesheet" href="main.css" />
-  <script type="text/javascript" src="js/switchHidden.js"  ></script>
 </head>
 
 <body>
@@ -33,23 +32,23 @@
           <h3>CORES</h3><br>
 
           <div class="checkboxContainer">
-            <input type="checkbox" name="Amarelo" id="Amarelo">
+            <input data-tipo="color" type="checkbox" name="Amarelo" id="Amarelo" value="Amarelo">
             <label for="Amarelo">Amarelo</label>
           </div>
           <div class="checkboxContainer">
-            <input type="checkbox" name="Azul" id="Azul">
+            <input data-tipo="color" type="checkbox" name="Azul" id="Azul" value="Azul"   >
             <label for="Azul">Azul</label>
           </div>
           <div class="checkboxContainer">
-            <input type="checkbox" name="Branco" id="Branco">
+            <input data-tipo="color" type="checkbox" name="Branco" id="Branco" value="Branco" >
             <label for="Branco">Branco</label>
           </div>
           <div class="checkboxContainer">
-            <input type="checkbox" name="Cinza" id="Cinza">
+            <input data-tipo="color" type="checkbox" name="Cinza" id="Cinza" value="Cinza"   >
             <label for="Cinza">Cinza</label>
           </div>
           <div class="checkboxContainer">
-            <input type="checkbox" name="Laranja" id="Laranja">
+            <input data-tipo="color" type="checkbox" name="Laranja" id="Laranja" value="Laranja">
             <label for="Laranja">Laranja</label>
           </div>
           <button class="showMore"><u>Ver todas as cores</u> <img src="./img/arrowDown.svg"></button>
@@ -136,7 +135,7 @@
       <ul id="cardList">
         <!-- Lista de produtos -->
       </ul>
-      <!-- <button onclick="switchHiddenElement()" class="squareButton blueBackground">CARREGAR MAIS</button> -->
+      <button id="loadMore" onclick="switchHiddenElement()" class="squareButton blueBackground">CARREGAR MAIS</button>
     </section>
 
     <div>

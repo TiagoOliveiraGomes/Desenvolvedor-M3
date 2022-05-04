@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Desafio da agencia m3 para novos colaboradores",
   "main": "index.js",
+  
   "scripts": {
     "start": "npm-run-all --parallel dev server",
     "dev": "gulp",
