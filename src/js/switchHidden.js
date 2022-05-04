@@ -5,11 +5,10 @@ export default function switchHiddenElement () {
     let quantityOfNewContents = 0
     
     if(hasHiddenElement){
-      console.log("entrou")
       productList.forEach(element => {
         if(quantityOfNewContents === 9) return
         if(element.classList == "hidden"){
-          element.classList.remove("hidden")
+          element.classList.toggle("hidden")
           quantityOfNewContents++
         }
     })}

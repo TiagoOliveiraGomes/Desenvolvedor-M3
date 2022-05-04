@@ -12,3 +12,10 @@
     align-items: center;
     margin: 5px 0;
 }
+.filterSection table button {
+    cursor: pointer;
+}
+.filterSection table button:focus {
+    border: solid 2px #00C0EE;
+    color: black;
+}
