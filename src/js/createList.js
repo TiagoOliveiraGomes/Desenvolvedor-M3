@@ -14,6 +14,7 @@ export default async function createList (api) {
         
         li.dataset.color = element.color
         li.dataset.price = element.price
+        li.dataset.size = element.size
         img.src = element.image
         img.alt = "imagem de:" + element.name
         h4.innerHTML = h4Value

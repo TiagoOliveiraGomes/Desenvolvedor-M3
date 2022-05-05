@@ -1,11 +1,12 @@
 import switchHiddenElement from "./switchHidden"
 
-export default function checkboxFilter () {
+export default function checkboxFilter (filterValue) {
     const checkboxList = document.querySelectorAll(".checkboxContainer input")
     const ulElement = document.getElementById('cardList')
     const productList = ulElement.querySelectorAll("li")
     let filters = []
     let filtersPrice = []
+    let filtersSize = []
 
     productList.forEach(element => {
         element.classList.add("hidden")
@@ -26,6 +27,26 @@ export default function checkboxFilter () {
             }
         }
     })
+    
+
+    productList.forEach(element => {
+        var array = `${element.dataset.size}`.split(",", 2);
+        filtersSize.push(array)
+    })
+    console.log(filtersSize)
+    productList.forEach(element => {
+        filtersSize.forEach(filtro => {
+            if(filtro.length = 2){
+            if(filtro[0] == filterValue || filtro[1] == filterValue){
+                element.classList.remove("hidden")
+            }}else {
+                if(filtro[0] == filterValue){
+                    element.classList.remove("hidden")
+                }
+            }
+        })
+    })
+
     productList.forEach(element => {
         filters.forEach(filtro => {
             if(element.dataset.color == filtro){
@@ -41,6 +62,8 @@ export default function checkboxFilter () {
             }
         })
     })
+
+    
 
     let allUnchecked = true
     checkboxList.forEach(filterOption => {

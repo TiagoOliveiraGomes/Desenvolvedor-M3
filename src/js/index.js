@@ -2,7 +2,8 @@ import api from './api'
 import createList from './createList'
 import switchHiddenElement from './switchHidden'
 import checkboxFilterColor from './checkboxFilterColor'
-import checkboxFilterPrice from './checkboxFilterPrice'
+import {filterForSize} from './checkboxFilterSize'
+
 
 createList(api)
 
@@ -10,7 +11,8 @@ createList(api)
 document.querySelectorAll(".checkboxContainer input").forEach(element=> {
     element.onclick = checkboxFilterColor
 })
-// document.querySelectorAll(".checkboxContainer input[data-tipo='price']").forEach(element=> {
-//     element.onclick = checkboxFilterPrice
-// })
+document.querySelectorAll(".filterSection table button").forEach(element=> {
+    element.onclick = () => checkboxFilterColor(element.value)
+})
+
 document.getElementById("loadMore").onclick= switchHiddenElement
